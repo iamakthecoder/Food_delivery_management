@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Menu</title>
+</head>
+<body>
+	<header>
+		<h1>Restaurant Name</h1>
+	</header>
+	<main>
+		<h2>Menu</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for item in menuList %}
+				<tr>
+					<td>{{ item.name }}</td>
+					<td>${{ item.pricePerItem }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<a href="/addFoodItem">Add Item</a>
+	</main>
+	<footer>
+		<p>Copyright © Restaurant Name</p>
+	</footer>
+</body>
+</html>

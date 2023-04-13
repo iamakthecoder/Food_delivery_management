@@ -1,0 +1,556 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+html, body, #app, #app>div {
+  height: 100%
+}
+
+
+.Login{
+  background-color: #3d3f49;
+  height:100%;
+  width:100%;
+}
+.background-form{
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background-form .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child{
+  background: linear-gradient(
+    #1845ad,
+    #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+  }
+  .shape:last-child{
+    background: linear-gradient(
+      to right,
+      #ff512f,
+      #f09819
+      );
+      right: -30px;
+      bottom: -80px;
+    }
+
+    .login-form{
+      height: 520px;
+      width: 400px;
+      background-color: rgba(255,255,255,0.13);
+      position: absolute;
+      transform: translate(-50%,-50%);
+      top: 50%;
+      left: 50%;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255,255,255,0.1);
+      box-shadow: 0 0 40px rgba(8,7,16,0.6);
+      padding: 50px 35px;
+    }
+    
+    .login-form *{
+      font-family: 'Poppins',sans-serif;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      outline: none;
+      border: none;
+    }
+    
+    .login-form .h1{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+
+.footer .btnlogin{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer .btnlogin:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+.login-form .form__input{
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.login-form ::placeholder{
+  color: #e5e5e5
+}
+
+
+
+/* Menu Icon */
+
+.menu-icon{
+  color:#fff
+}
+
+
+/* Table Design*/
+
+.my-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin:auto;
+  margin-top: 50px;
+  /* height:70% */
+}
+
+.my-table thead tr {
+  background-color: #232424;
+  color: #ffffff;
+  text-align: center;
+}
+
+.my-table th,
+.my-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.my-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.my-table tbody tr:nth-of-type(even) {
+  background-color: #009879;
+}
+
+.my-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+/* .my-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+} */
+
+
+/* Sign Up Design */
+
+.SignUp{
+  justify-content: center;
+	align-items: center;
+  background: url("../src/images/img22.jpg") no-repeat center/ cover;
+  height:100%;
+  width:100%;
+}
+
+.signup-form{
+	overflow: hidden;
+  border-color: #fff;
+	/* background: url("../src/images/img20.jpg") no-repeat center/ cover; */
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  width: 500px;
+	height: 600px;
+}
+
+.signup-form .form__input{
+  width: 60%;
+	height: 20px;
+	background: #fff;
+	display: flex;
+	margin: 10px auto;
+	padding: 12px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.signup-form *{
+  color:#000
+}
+
+
+.footer .btnsignup{
+  margin-left: 120px;
+  margin-top: 20px;
+  width: 50%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: px;
+  cursor: pointer;
+}
+
+.footer .btnsignup:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+.signup-form ::placeholder{
+  color: #000
+}
+
+.signup-form .gender *{
+  color:#000;
+  visibility: visible;
+}
+
+.signup-form .header{
+  color:#fff;
+}
+
+.CustomerDashboard,.AboutUs,.PersonalData,.Order,.AllRestaurants,.ConfirmOrder,.RecentOrderCustomer,.MoreDetailsOrder, .PastOrders,.RecommendedRestaurant{
+  text-align:center;
+  min-height: 100vh;
+  width:100%;
+  background-image: url("../src/images/img23.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  padding-bottom:120px;
+}
+
+.CustomerDashboard .cdashcont .cdashoptions{
+  text-align: center;
+}
+
+
+.CustomerDashboard .cdashcont .cdashoptions .cdashbuttons{
+  padding: 10px;
+  width:20%;
+  margin-top: 50px;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.CustomerDashboard .cdashcont .cdashoptions .cdashbuttons:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+
+.btn1{
+  margin-top: 15px;
+  width: 60%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn1:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+.gradient {
+  width:50%;
+  align-items: center;
+  margin: auto;
+  height: 0.3em;
+  color: white;
+  background: black;
+  background:linear-gradient(to right,rgb(181, 200, 211),black,black,rgb(181, 200, 211));
+
+}
+
+
+.RestaurantDashboard .rdashcont .rdashoptions{
+  text-align: center;
+}
+
+.RestaurantDashboard,.PersonalDataRestaurant, .Menu,
+.AddFoodItem,.PendingOrderRestaurant,.PastOrdersRestaurant,
+.OrderDetailsRestaurant,
+.GiveEstimatedTime,.SendDeliveryRequest{
+  text-align:center;
+  min-height: 100vh;
+  width:100%;
+  background-image: url("../src/images/img23.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  padding-bottom:100px;
+}
+
+.RestaurantDashboard .rdashcont .rdashoptions .rdashbuttons{
+  padding: 10px;
+  width:20%;
+  margin-top: 50px;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.RestaurantDashboard .rdashcont .rdashoptions .rdashbuttons:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+
+.regularform{
+  text-align: center;
+  
+  height: 400px;
+  width: 500px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 40%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+
+.regularform .form__input{
+  margin:auto;
+  display: block;
+  height: 50px;
+  width: 60%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.regularform .btn1{
+  margin-top: 15px;
+  width: 60%;
+  background-color: #45d44d;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.regularform .btn1:hover{
+  background-color: #000000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+.btntemp{
+  margin-top: 15px;
+  width: 60%;
+  background-color: #45d44d;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btntemp:hover{
+  background-color: #000000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+
+.gradient1 {
+  width:50%;
+  align-items: center;
+  margin: auto;
+  height: 0.3em;
+  color: white;
+  background: black;
+  background:linear-gradient(to right,rgb(216, 211, 211),black,black, rgb(216, 211, 211));
+
+}
+
+
+.DeliveryAgentDashboard,
+.PersonalDataDeliveryAgent,
+.MarkLocation,.SeeDeliveryRequest,.AcceptDeliveryRequest,.MoreDetailsDeliveryRequest,
+.RatingDeliveryAgent{
+  text-align:center;
+  min-height: 100vh;
+  width:100%;
+  background-image: url("../src/images/img23.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  padding-bottom:100px;
+}
+
+.DeliveryAgentDashboard .ddashcont .ddashoptions{
+  text-align: center;
+}
+
+.DeliveryAgentDashboard .ddashcont .ddashoptions .ddashbuttons{
+  padding: 10px;
+  width:20%;
+  margin-top: 50px;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.DeliveryAgentDashboard .ddashcont .ddashoptions .ddashbuttons:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+.MarkLocation .form__input{
+  margin:auto;
+  display: block;
+  height: 50px;
+  width: 30%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.AdminDashboard,
+.AllCustomers,
+.AllRestaurantAdmin,
+.AllDeliveryAgents,
+.CreateOffer,
+.AddOffer,
+.AllOffers{
+  text-align:center;
+  min-height: 100vh;
+  width:100%;
+  background-image: url("../src/images/img23.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  padding-bottom:100px;
+}
+
+
+.addashbuttons{
+  padding: 10px;
+  width:20%;
+  margin-top: 50px;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addashbuttons:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}
+
+.AboutUs .aboutusheader{
+  font-size:4em;
+}
+
+.AboutUs .aboutuspara{
+  text-align:center;
+  padding-top:1.5em;
+  margin-left:25%;
+  margin-right:25%;
+  font-size:1.5em;
+}
+
+.navbar-dashboard{
+  margin-top:20px;
+  margin-left:70px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.btnlogout{
+  position:absolute;
+  right:0;
+  margin-right:70px;
+  margin-bottom:15px;
+}
+
+.btnlogout{
+  margin-top: 15px;
+  width: 60%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnlogout:hover{
+  background-color: #000;
+  color: #fff;
+  transition-duration: 400ms;
+}

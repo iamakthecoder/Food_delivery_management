@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DeliveryAgent Login</title>
+    <style>
+      /* Style the form container */
+      .container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      /* Style the form */
+      form {
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        font-size: 16px;
+      }
+      /* Style the form labels and inputs */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      /* Style the submit button */
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/deliveryAgentLogin" method="POST">
+        <h2>Login</h2>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
