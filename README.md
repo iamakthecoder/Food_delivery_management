@@ -27,6 +27,7 @@ nodeenv myenv
 ```
 
 ### Install dependencies
+Move to the cloned repository directory `Food_delivery_management`, and run
 ```Shell
 pip install -r requirements.txt
 ```
